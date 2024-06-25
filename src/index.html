@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <section class="transactions">
+      <div class="transactions__head">
+        <h1 class="transactions__title">لیست تراکنش ها</h1>
+        <div class="transactions__search">
+          <!-- <i class="fa-solid fa-magnifying-glass search-icon"></i> -->
+          <input
+            type="text"
+            placeholder="جستجوی تراکنش ..."
+            class="search-input"
+          />
+        </div>
+      </div>
+      <div class="transactions__body">
+        <button class="transactions__loading">بارگذاری تراکنش‌ها</button>
+        <div class="transactions__content">
+          <h2 class="list-title">لیست تراکنش های شما</h2>
+          <table class="transactions__table">
+            <thead>
+              <tr class="table-head">
+                <th>ردیف</th>
+                <th>نوع تراکنش</th>
+                <th class="price">
+                  مبلغ
+                  <i class="fa-solid fa-chevron-down"></i>
+                </th>
+                <th>شماره پیگیری</th>
+                <th class="date">
+                  تاریخ تراکنش
+                  <i class="fa-solid fa-chevron-down"></i>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="tBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
